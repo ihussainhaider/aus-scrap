@@ -2467,931 +2467,337 @@ body {
 }
 
 /* Quote Page Styles */
-/* Modern Quote Section */
-.modern-quote-section {
-    margin-bottom: 3rem;
+/* --- Global Reset/Base Styles for Modern Look --- */
+.modern-quote-page {
+    font-family: Arial, sans-serif;
+    padding: 0 1rem; /* Add padding for container */
 }
 
-.modern-quote-layout {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 2rem;
-    align-items: start;
+/* --- Typography and Header --- */
+.modern-quote-page .page-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    background-color: #f8fbff; /* Very light background for header */
 }
 
-
-/* Modern Form Container */
-.modern-form-container {
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    border: 1px solid #f1f5f9;
-}
-
-.form-header-modern {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #f1f5f9;
-}
-
-.form-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #030213, #1a1a2e);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
-.form-header-modern h2 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #030213;
+.modern-quote-page .section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #030213; /* Primary dark color */
     margin-bottom: 0.5rem;
 }
 
-.form-header-modern p {
-    color: #64748b;
-    margin: 0;
-}
-
-/* Modern Form Sections */
-.form-section-modern {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #f1f5f9;
-    overflow: visible;
-}
-
-.form-section-modern:last-of-type {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.section-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
-}
-
-.section-header i {
-    width: 40px;
-    height: 40px;
-    background: #f8fbff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #030213;
-    font-size: 1.1rem;
-}
-
-.section-header h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #030213;
-    margin: 0;
-}
-
-.optional-badge {
-    background: #f1f5f9;
-    color: #64748b;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-left: auto;
-}
-
-/* Form Grid */
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-.form-group-modern {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.form-group-modern.full-width {
-    grid-column: 1 / -1;
-}
-
-.form-group-modern label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    color: #030213;
-    font-size: 0.95rem;
-}
-
-.form-group-modern label i {
-    color: #64748b;
-    width: 16px;
-    font-size: 0.9rem;
-}
-
-.form-group-modern input,
-.form-group-modern select,
-.form-group-modern textarea {
-    padding: 1rem 1.25rem;
-    border: 2px solid #f1f5f9;
-    border-radius: 12px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: #fafbfc;
-    font-family: inherit;
-}
-
-.form-group-modern input:focus,
-.form-group-modern select:focus,
-.form-group-modern textarea:focus {
-    outline: none;
-    border-color: #030213;
-    background: white;
-    box-shadow: 0 0 0 3px rgba(3, 2, 19, 0.1);
-}
-
-.form-group-modern textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-/* Weight Input */
-.weight-input-container {
-    position: relative;
-}
-
-.weight-input-container input {
-    padding-right: 60px;
-}
-
-.weight-unit {
-    position: absolute;
-    right: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #64748b;
-    font-weight: 500;
-}
-
-.weight-suggestions {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.weight-suggestion {
-    background: #f1f5f9;
-    color: #64748b;
-    padding: 0.375rem 0.75rem;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.weight-suggestion:hover {
-    background: #030213;
-    color: white;
-}
-
-/* Upload Area */
-.upload-container {
-    margin-top: 1rem;
-}
-
-.upload-area {
-    border: 2px dashed #e9ebef;
-    border-radius: 12px;
-    padding: 2.5rem 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    background: #fafbfc;
-}
-
-.upload-area:hover {
-    border-color: #030213;
-    background: #f8fbff;
-}
-
-.upload-area i {
-    font-size: 2.5rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-}
-
-.upload-area h4 {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #030213;
-    margin-bottom: 0.5rem;
-}
-
-.upload-area p {
-    color: #64748b;
-    margin-bottom: 0.5rem;
-}
-
-.upload-note {
-    font-size: 0.875rem;
-    color: #94a3b8;
-}
-
-.upload-preview {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-/* Checkbox Styles */
-.checkbox-modern {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0.75rem;
-}
-
-.checkbox-modern input[type="checkbox"] {
-    margin-top: 0.25rem;
-    transform: scale(1.2);
-}
-
-.checkbox-modern label {
-    font-weight: normal;
-    line-height: 1.5;
-}
-
-/* Agreement Section */
-.agreement-section {
-    background: #f8fbff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin: 2rem 0;
-}
-
-/* Form Actions */
-.form-actions-modern {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.btn-calculate {
-    background: white;
-    color: #030213;
-    border: 2px solid #e9ebef;
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    flex: 1;
-    justify-content: center;
-}
-
-.btn-calculate:hover {
-    border-color: #030213;
-    transform: translateY(-2px);
-}
-
-.btn-submit-quote {
-    background: linear-gradient(135deg, #030213, #1a1a2e);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    flex: 2;
-    justify-content: center;
-    position: relative;
-}
-
-.btn-submit-quote:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(3, 2, 19, 0.2);
-}
-
-.btn-loading {
-    display: none;
-}
-
-/* Modern Sidebar */
-.modern-quote-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    position: sticky;
-    top: 2rem;
-}
-
-.sidebar-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    border: 1px solid #f1f5f9;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-}
-
-.card-header i {
-    width: 40px;
-    height: 40px;
-    background: #f8fbff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #030213;
-    font-size: 1.1rem;
-}
-
-.card-header h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #030213;
-    margin: 0;
-    flex: 1;
-}
-
-.price-badge {
-    background: #10b981;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 600;
-}
-
-.card-subtitle {
-    color: #64748b;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-}
-
-/* Estimate Card */
-.estimate-card-modern {
-    border-left: 4px solid #007AFF;
-}
-
-.estimate-value-modern {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #030213;
-    text-align: center;
-    margin: 1rem 0;
-}
-
-.estimate-note {
-    color: #64748b;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-}
-
-.estimate-breakdown {
-    background: #f8fbff;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-.breakdown-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-}
-
-.breakdown-item:not(:last-child) {
-    border-bottom: 1px solid #e9ebef;
-}
-
-.breakdown-item span:first-child {
-    color: #64748b;
-}
-
-.breakdown-item span:last-child {
-    font-weight: 600;
-    color: #030213;
-}
-
-/* Pricing Card */
-.pricing-card-modern {
-    border-left: 4px solid #34C759;
-}
-
-.price-list-modern {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.price-item-modern {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: #f8fbff;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-}
-
-.price-item-modern.premium {
-    background: linear-gradient(135deg, #fffbf0, #fefce8);
-    border: 1px solid #fef3c7;
-}
-
-.price-item-modern:hover {
-    transform: translateX(4px);
-}
-
-.metal-info {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.metal-info i {
-    color: #030213;
-    width: 16px;
-}
-
-.metal-info span {
-    font-weight: 500;
-    color: #030213;
-}
-
-.price {
-    font-weight: 600;
-    color: #030213;
-}
-
-.price-footer {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #e9ebef;
-    font-size: 0.8rem;
-    color: #64748b;
-}
-
-/* Help Card */
-.help-card-modern {
-    border-left: 4px solid #f59e0b;
-}
-
-.help-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
-}
-
-.help-btn {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    border: 2px solid #f1f5f9;
-    border-radius: 12px;
-    background: white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    text-align: left;
-    width: 100%;
-}
-
-.help-btn:hover {
-    transform: translateY(-2px);
-    border-color: #030213;
-}
-
-.help-btn.phone:hover {
-    border-color: #007AFF;
-}
-
-.help-btn.whatsapp:hover {
-    border-color: #25D366;
-}
-
-.help-btn i {
-    font-size: 1.25rem;
-    width: 24px;
-}
-
-.help-btn.phone i {
-    color: #007AFF;
-}
-
-.help-btn.whatsapp i {
-    color: #25D366;
-}
-
-.btn-title {
-    font-weight: 600;
-    color: #030213;
-    display: block;
-    font-size: 0.95rem;
-}
-
-.btn-subtitle {
-    font-size: 0.875rem;
-    color: #64748b;
-}
-
-.help-features {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.help-feature {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: #64748b;
-    font-size: 0.9rem;
-}
-
-.help-feature i {
-    color: #007AFF;
-    width: 16px;
-}
-
-/* Benefits Section */
-.modern-benefits-section {
-    margin-bottom: 4rem;
-}
-
-.benefits-container {
-    background: white;
-    padding: 3rem;
-    border-radius: 24px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    border: 1px solid #f1f5f9;
-}
-
-.benefits-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.benefits-header h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #030213;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-}
-
-.benefits-header p {
-    color: #64748b;
-    font-size: 1.125rem;
-    max-width: 600px;
+.modern-quote-page .section-subtitle {
+    font-size: 1.15rem;
+    color: #717182; /* Text gray */
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.modern-benefits-grid {
+/* --- Benefits Section (New Modern Look) --- */
+
+
+/* --- Main Form Grid Layout --- */
+.quote-form-section {
+    padding: 3rem 0;
+    background-color: #f3f3f5; /* Light subtle background for the section */
+}
+
+.quote-grid-modern {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 3fr 1.5fr; /* Wider form, narrower sidebar */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Ensure padding inside max-width */
+}
+
+/* --- Form Container Styling --- */
+.quote-form-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.quote-form-container .form-main-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #030213;
+    margin-bottom: 1rem;
+}
+
+.quote-form-container .form-header p {
+    color: #717182;
+    margin-bottom: 2rem;
+}
+
+.quote-form-container .section-heading {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #030213;
+    border-bottom: 2px solid #e9ebef;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.quote-form .form-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.quote-form .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-form label {
+    font-weight: 600;
+    color: #030213;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.quote-form input:not([type="checkbox"]),
+.quote-form select,
+.quote-form textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e9ebef;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #030213;
+    background-color: #fafafa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    box-sizing: border-box; /* Crucial for no overflow */
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+    border-color: #030213;
+    box-shadow: 0 0 0 3px rgba(3, 2, 19, 0.1);
+    outline: none;
+}
+
+.quote-form .file-note {
+    font-size: 0.85rem;
+    color: #717182;
+    margin-top: 0.5rem;
+}
+
+.quote-form .checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quote-form .checkbox-group label {
+    font-weight: normal;
+    color: #717182;
+    margin: 0;
+    cursor: pointer;
+}
+
+.quote-form .agreement-group {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quote-form .agreement-group .terms-link {
+    color: #030213;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* --- Form Buttons --- */
+.form-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    text-decoration: none; /* For the help buttons */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary.btn-dark-primary {
+    background-color: #030213; /* Primary brand color */
+    color: #ffffff;
+    border: 1px solid #030213;
+}
+
+.btn-primary.btn-dark-primary:hover {
+    background-color: #1a192c;
+}
+
+.btn-outline.btn-dark-outline {
+    background-color: transparent;
+    color: #030213;
+    border: 1px solid #030213;
+}
+
+.btn-outline.btn-dark-outline:hover {
+    background-color: #030213;
+    color: #ffffff;
+}
+
+/* --- Sidebar Styling --- */
+.quote-sidebar-modern {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
-.modern-benefit-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+.quote-sidebar-modern .estimate-card,
+.quote-sidebar-modern .pricing-card,
+.quote-sidebar-modern .help-card {
+    background-color: #ffffff;
     padding: 1.5rem;
-    background: #f8fbff;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-}
-
-.modern-benefit-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.benefit-icon {
-    width: 50px;
-    height: 50px;
     border-radius: 12px;
-    background: linear-gradient(135deg, #030213, #1a1a2e);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.benefit-content h4 {
-    font-size: 1.125rem;
-    font-weight: 600;
+.quote-sidebar-modern .card-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
     color: #030213;
     margin-bottom: 0.5rem;
 }
 
-.benefit-content p {
-    color: #64748b;
-    margin: 0;
+.quote-sidebar-modern .card-note,
+.quote-sidebar-modern .price-note {
+    font-size: 0.9rem;
+    color: #717182;
+    margin-bottom: 1rem;
+}
+
+.estimate-card {
+    background-color: #e9ebef; /* Subtle accent for estimate card */
+}
+
+.estimate-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #030213;
+    margin-bottom: 0.5rem;
+}
+
+.price-list {
+    border-top: 1px solid #e9ebef;
+    padding-top: 0.5rem;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #e9ebef;
     font-size: 0.95rem;
-    line-height: 1.5;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .modern-quote-layout {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .modern-quote-sidebar {
-        position: static;
-    }
+.price-item:last-child {
+    border-bottom: none;
+    margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-    .modern-form-container {
-        padding: 2rem 1.5rem;
-    }
-    
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-header-modern {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-    
-    .form-actions-modern {
-        flex-direction: column;
-    }
-    
-    .benefits-container {
-        padding: 2rem 1.5rem;
-    }
-    
-    .modern-benefits-grid {
-        grid-template-columns: 1fr;
-    }
+.price-metal {
+    font-weight: 600;
+    color: #030213;
 }
 
-@media (max-width: 480px) {
-    .modern-form-container {
-        padding: 1.5rem;
-    }
-    
-    .sidebar-card {
-        padding: 1.5rem;
-    }
-    
-    .benefits-header h2 {
-        font-size: 1.75rem;
-    }
+.price-rate {
+    font-weight: 500;
+    color: #717182;
 }
-/* Add these overflow fixes to your existing CSS */
 
-.modern-quote-section {
-    margin-bottom: 3rem;
+.help-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.help-buttons .btn {
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    text-align: center;
+    justify-content: center;
 }
 
-.modern-quote-layout {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    max-width: 100%; /* Ensure it doesn't exceed container */
-    box-sizing: border-box; /* Include padding in width calculation */
+.help-buttons .btn-whatsapp {
+    background-color: #25D366; /* WhatsApp green */
+    color: #ffffff;
+    border: 1px solid #25D366;
 }
 
-/* Modern Form Container */
-.modern-form-container {
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    border: 1px solid #f1f5f9;
-    max-width: 100%; /* Prevent overflow */
-    box-sizing: border-box;
-    overflow: hidden; /* Contain any internal overflow */
+.help-buttons .btn-whatsapp:hover {
+    background-color: #1DA851;
 }
 
-/* Add these mobile-specific fixes */
-@media (max-width: 768px) {
-    .modern-quote-layout {
-        grid-template-columns: 1fr !important; /* Single column on mobile */
-        gap: 1.5rem;
+/* --- Responsive Layout --- */
+@media (max-width: 992px) {
+    .quote-grid-modern {
+        grid-template-columns: 1fr; /* Stack form and sidebar */
     }
-    
-    .modern-form-container {
-        padding: 1.5rem !important;
-        width: 100vw; /* Full viewport width */
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw !important;
-        margin-right: -50vw !important;
-        border-radius: 0; /* Remove rounded corners on mobile */
-        box-shadow: none; /* Remove shadow on mobile */
-        border-left: none;
-        border-right: none;
+    .quote-form-container {
+        order: 1; /* Form first */
     }
-    
-    .form-grid {
-        grid-template-columns: 1fr !important; /* Single column form */
+    .quote-sidebar-modern {
+        order: 2; /* Sidebar second */
+    }
+    .quote-form .form-row {
+        flex-direction: column; /* Stack form groups vertically */
+        gap: 0;
+    }
+    .quote-form .form-row .form-group {
+        margin-bottom: 1.5rem;
+    }
+    .quote-form .form-row .form-group:last-child {
+        margin-bottom: 0;
+    }
+    .form-buttons {
+        justify-content: center; /* Center buttons */
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .modern-quote-page .section-title {
+        font-size: 2rem;
+    }
+    .modern-quote-page .section-subtitle {
+        font-size: 1rem;
+    }
+    .quote-benefits-modern .benefits-grid {
         gap: 1rem;
     }
-    
-    .form-header-modern {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        margin-bottom: 1.5rem !important; /* Reduce margin */
-        padding-bottom: 1rem !important;
+    .quote-benefits-modern .benefit-item {
+        flex: 1 1 45%; /* Max 2 items per row */
+        justify-content: flex-start;
     }
-    
-    .form-actions-modern {
+    .quote-form-container {
+        padding: 1.5rem;
+    }
+    .form-buttons {
         flex-direction: column; /* Stack buttons vertically */
-        gap: 0.75rem;
-        margin-top: 1.5rem !important;
     }
-    
-    .btn-calculate,
-    .btn-submit-quote {
-        width: 100%; /* Full width buttons */
-        justify-content: center;
-    }
-    
-    /* Fix sidebar cards on mobile */
-    .modern-quote-sidebar {
-        gap: 1rem;
-    }
-    
-    .sidebar-card {
-        border-radius: 12px;
-        padding: 1.5rem !important;
-    }
-    
-    /* Fix benefits section */
-    .benefits-container {
-        padding: 1.5rem !important;
-        border-radius: 0;
-        margin-left: -50vw !important;
-        margin-right: -50vw !important;
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        box-shadow: none;
-        border-left: none;
-        border-right: none;
-    }
-    
-    .modern-benefits-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1rem;
+    .form-buttons .btn {
+        width: 100%;
     }
 }
 
-@media (max-width: 480px) {
-    .modern-form-container {
-        padding: 1.25rem !important;
-    }
-    
-    .form-header-modern h2 {
-        font-size: 1.25rem !important; /* Smaller heading */
-    }
-    
-    .form-header-modern p {
-        font-size: 0.9rem; /* Smaller text */
-    }
-    
-    .section-header h3 {
-        font-size: 1rem !important; /* Smaller section headers */
-    }
-    
-    .form-group-modern input,
-    .form-group-modern select,
-    .form-group-modern textarea {
-        padding: 0.75rem !important; /* Tighter padding */
-        font-size: 0.9rem; /* Smaller font */
-    }
-    
-    .form-group-modern textarea {
-        min-height: 80px !important; /* Smaller textarea */
-    }
-    
-    /* Fix upload area */
-    .upload-area {
-        padding: 1.5rem 1rem !important; /* Reduced padding */
-    }
-    
-    .upload-area i {
-        font-size: 1.75rem !important; /* Smaller icon */
-        margin-bottom: 0.5rem !important;
-    }
-    
-    .upload-area h4 {
-        font-size: 1rem !important;
-    }
-    
-    /* Ensure no horizontal scroll */
-    body {
-        overflow-x: hidden;
-    }
-    
-    .container {
-        max-width: 100%;
-        padding: 0 15px;
-        overflow-x: hidden;
-    }
-}
-
-/* Additional overflow prevention for all elements */
-.form-group-modern input,
-.form-group-modern select,
-.form-group-modern textarea {
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.upload-area {
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.weight-suggestions {
-    max-width: 100%;
-    flex-wrap: wrap;
-}
-
-/* Fix for any potential padding issues in the container */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-        overflow-x: hidden;
-    }
-    
-    .page-content {
-        padding: 1rem 0;
-        overflow-x: hidden;
-    }
-}
-
-/* Emergency overflow fix - if still overflowing */
-@media (max-width: 768px) {
-    .modern-quote-section {
-        transform: scale(0.98);
-        transform-origin: top center;
-    }
-}
-
-/********************/
-
-
-
-
-/*****************************************************/
-/*****************************************************/
 /* Floating Actions */
 /* Simple Modern FAB */
 .floating-actions-simple {
@@ -3770,7 +3176,154 @@ border-bottom-left-radius: 10px;
 .icon-circle.purple { background: #8e44ad; }
 .icon-circle.orange { background: #f39c12; }
 
+/***********************************************/
+/* --- Services Preview Section --- */
+.services-preview {
+    padding: 5rem 0;
+    background-color: #f8fbff; /* Subtle light background */
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
 
+.services-preview .container {
+    padding: 0 1rem;
+}
+
+/* --- Section Header Styling --- */
+.services-preview .section-header {
+    margin-bottom: 3rem;
+}
+
+.services-preview .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #030213; /* Primary dark color */
+    margin-bottom: 0.75rem;
+}
+
+.services-preview .section-header p {
+    font-size: 1.125rem;
+    color: #717182; /* Text gray */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Services Grid Layout --- */
+.services-grid {
+    display: grid;
+    /* 3 equal columns, responsive minimum of 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* --- Service Card Styling --- */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    /* Subtle border for definition */
+    border: 1px solid #e9ebef; 
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    /* Fixed height for uniformity, adjust object-fit */
+    height: 200px; 
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.03); /* Subtle zoom effect on hover */
+}
+
+.service-content {
+    padding: 1.5rem;
+}
+
+.service-content h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #030213; /* Primary dark color */
+    margin-bottom: 0.5rem;
+}
+
+.service-content p {
+    font-size: 1rem;
+    color: #717182; /* Text gray */
+    line-height: 1.5;
+}
+
+/* --- Button Styling --- */
+.text-center {
+    text-align: center;
+}
+
+.btn.btn-primary {
+    background-color: #030213; /* Primary dark color */
+    color: #ffffff;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: #1a192c;
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .services-preview {
+        padding: 3rem 0;
+    }
+    .services-preview .section-header h2 {
+        font-size: 2rem;
+    }
+    .services-grid {
+        /* Stack to two columns on tablets */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        /* Stack to one column on mobile */
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+    }
+    .service-card img {
+        height: 180px;
+    }
+    .service-content {
+        padding: 1.25rem;
+    }
+    .service-content h3 {
+        font-size: 1.2rem;
+    }
+}
 
 
 

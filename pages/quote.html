@@ -53,367 +53,163 @@
 
         <!-- Quote Page -->
         
-            <div class="container page-content">
-    <!-- Modern Header -->
-    <div class="modern-page-header">
-        <span class="page-badge">
-            <i class="fas fa-calculator"></i>
-            Instant Quote
-        </span>
-        <h1>Get Your Free Scrap Metal Quote</h1>
-        <p class="modern-subtitle">Receive an accurate, competitive quote for your scrap metal in minutes. Our expert team provides professional assessment and the best market rates.</p>
+            <div class="container page-content modern-quote-page">
+    <div class="page-header">
+        <h1 class="section-title">Get Your Free Quote <i class="fas fa-hammer"></i></h1>
+        <p class="section-subtitle">Get an **accurate, competitive quote** for your scrap metal in minutes. Our expert team will assess your materials and provide the best possible price.</p>
     </div>
 
-    <!-- Benefits Section -->
-    <section class="modern-benefits-section">
-        <div class="benefits-container">
-            <div class="benefits-header">
-                <h2><i class="fas fa-award"></i> Why Choose Our Quote Service</h2>
-                <p>Experience the AusScrap difference with our premium quoting process</p>
-            </div>
-            <div class="modern-benefits-grid">
-                <div class="modern-benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-tag"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h4>Free, No-Obligation Quotes</h4>
-                        <p>Get accurate pricing with zero commitment required</p>
-                    </div>
-                </div>
-                <div class="modern-benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h4>Competitive Market Rates</h4>
-                        <p>Best prices guaranteed based on live market data</p>
-                    </div>
-                </div>
-                <div class="modern-benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h4>Free Pickup Service</h4>
-                        <p>We come to you anywhere in Canberra</p>
-                    </div>
-                </div>
-                <div class="modern-benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h4>Same-Day Quotes</h4>
-                        <p>Quick response within 2 hours during business hours</p>
-                    </div>
-                </div>
-                <div class="modern-benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h4>Professional Assessment</h4>
-                        <p>Expert evaluation by certified metal specialists</p>
-                    </div>
-                </div>
-                <div class="modern-benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <div class="benefit-content">
-                        <h4>Instant Payment</h4>
-                        <p>Cash on pickup or bank transfer options</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-    <!-- Quote Form Section -->
-    <section class="modern-quote-section">
-        <div class="modern-quote-layout">
-            <!-- Main Form -->
-            <div class="modern-form-container">
-                <div class="form-header-modern">
-                    <div class="form-icon">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                    </div>
-                    <div>
-                        <h2>Quote Request Form</h2>
-                        <p>Fill out the details below for an accurate quote. All fields marked with * are required.</p>
-                    </div>
+    <section class="quote-form-section">
+        <div class="quote-grid-modern">
+            
+            <div class="quote-form-container">
+                <div class="form-header">
+                    <h2 class="form-main-heading">Quote Request Form <i class="fas fa-calculator"></i></h2>
+                    <p>Fill out the details below for an accurate quote. All fields marked with * are required.</p>
                 </div>
-
-                <form class="modern-quote-form" id="quoteForm">
-                    <!-- Personal Information -->
-                    <div class="form-section-modern">
-                        <div class="section-header">
-                            <i class="fas fa-user-circle"></i>
-                            <h3>Personal Information</h3>
+                
+                <form class="quote-form" id="quoteForm">
+                    
+                    <div class="form-section">
+                        <h3 class="section-heading">Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quoteName">Full Name *</label>
+                                <input type="text" id="quoteName" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteEmail">Email Address *</label>
+                                <input type="email" id="quoteEmail" name="email" required placeholder="john.doe@example.com">
+                            </div>
                         </div>
-                        <div class="form-grid">
-                            <div class="form-group-modern">
-                                <label for="quoteName">
-                                    <i class="fas fa-user"></i>
-                                    Full Name *
-                                </label>
-                                <input type="text" id="quoteName" name="name" required placeholder="Enter your full name">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quotePhone">Phone Number *</label>
+                                <input type="tel" id="quotePhone" name="phone" required placeholder="(04) 1234 5678">
                             </div>
-                            <div class="form-group-modern">
-                                <label for="quoteEmail">
-                                    <i class="fas fa-envelope"></i>
-                                    Email Address *
-                                </label>
-                                <input type="email" id="quoteEmail" name="email" required placeholder="your.email@example.com">
-                            </div>
-                            <div class="form-group-modern">
-                                <label for="quotePhone">
-                                    <i class="fas fa-phone"></i>
-                                    Phone Number *
-                                </label>
-                                <input type="tel" id="quotePhone" name="phone" required placeholder="0400 000 000">
-                            </div>
-                            <div class="form-group-modern">
-                                <label for="quoteAddress">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Pickup Address *
-                                </label>
-                                <input type="text" id="quoteAddress" name="address" required placeholder="Enter your suburb and postcode">
+                            <div class="form-group">
+                                <label for="quoteAddress">Pickup Address *</label>
+                                <input type="text" id="quoteAddress" name="address" required placeholder="123 Example St, Canberra">
                             </div>
                         </div>
                     </div>
 
-                    <!-- Metal Information -->
-                    <div class="form-section-modern">
-                        <div class="section-header">
-                            <i class="fas fa-cube"></i>
-                            <h3>Metal Information</h3>
-                        </div>
-                        <div class="form-grid">
-                            <div class="form-group-modern">
-                                <label for="metalType">
-                                    <i class="fas fa-weight-hanging"></i>
-                                    Metal Type *
-                                </label>
+                    <div class="form-section">
+                        <h3 class="section-heading">Metal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="metalType">Metal Type *</label>
                                 <select id="metalType" name="metalType" required onchange="calculateEstimate()">
                                     <option value="">Select metal type</option>
                                     <option value="copper" data-price="8.50">Copper - $8.50/kg (Pipes, wiring, fittings)</option>
                                     <option value="aluminum" data-price="2.20">Aluminum - $2.20/kg (Cans, wheels, siding)</option>
                                     <option value="steel" data-price="0.45">Steel - $0.45/kg (Structural steel, appliances)</option>
                                     <option value="brass" data-price="6.80">Brass - $6.80/kg (Fixtures, decorative items)</option>
-                                    <option value="stainless" data-price="3.20">Stainless Steel - $3.20/kg (Kitchen equipment, medical)</option>
+                                    <option value="stainless" data-price="3.20">Stainless Steel - $3.20/kg (Kitchen equipment)</option>
                                     <option value="lead" data-price="2.10">Lead - $2.10/kg (Batteries, pipes)</option>
                                     <option value="mixed" data-price="1.50">Mixed Metals - $1.50/kg (Various metal types)</option>
                                 </select>
                             </div>
-                            <div class="form-group-modern">
-                                <label for="estimatedWeight">
-                                    <i class="fas fa-balance-scale"></i>
-                                    Estimated Weight (kg) *
-                                </label>
-                                <div class="weight-input-container">
-                                    <input type="number" id="estimatedWeight" name="weight" min="1" required onchange="calculateEstimate()" placeholder="0">
-                                    <span class="weight-unit">kg</span>
-                                </div>
-                                <div class="weight-suggestions">
-                                    <span class="weight-suggestion" data-weight="50">Car (50kg)</span>
-                                    <span class="weight-suggestion" data-weight="200">Fridge (200kg)</span>
-                                    <span class="weight-suggestion" data-weight="500">Industrial (500kg+)</span>
-                                </div>
+                            <div class="form-group">
+                                <label for="estimatedWeight">Estimated Weight (kg) *</label>
+                                <input type="number" id="estimatedWeight" name="weight" min="1" required onchange="calculateEstimate()" placeholder="e.g. 100">
                             </div>
                         </div>
-                        <div class="form-group-modern full-width">
-                            <label for="description">
-                                <i class="fas fa-comment-alt"></i>
-                                Description (Optional)
-                            </label>
-                            <textarea id="description" name="description" rows="3" placeholder="Describe your metal items, condition, quantity, and any specific details that might help us provide a better estimate..."></textarea>
+                        <div class="form-group">
+                            <label for="description">Description (Optional)</label>
+                            <textarea id="description" name="description" rows="3" placeholder="Describe your metal items (condition, quantity, specific details...)"></textarea>
                         </div>
                     </div>
 
-                    <!-- Photos Upload -->
-                    <div class="form-section-modern">
-                        <div class="section-header">
-                            <i class="fas fa-camera"></i>
-                            <h3>Photo Upload</h3>
-                            <span class="optional-badge">Optional</span>
+                    <div class="form-section">
+                        <h3 class="section-heading">Photos & Pickup</h3>
+                        <div class="form-group">
+                            <label for="photos">Upload Photos (Optional, but Recommended) <i class="fas fa-camera"></i></label>
+                            <input type="file" id="photos" name="photos" multiple accept="image/*">
+                            <p class="file-note">Upload photos of your metal for a more accurate quote (Max 5 photos).</p>
                         </div>
-                        <div class="upload-container">
-                            <div class="upload-area" id="uploadArea">
-                                <i class="fas fa-cloud-upload-alt"></i>
-                                <h4>Upload Photos</h4>
-                                <p>Drag & drop or click to browse</p>
-                                <span class="upload-note">Max 5 photos, 10MB each</span>
-                                <input type="file" id="photos" name="photos" multiple accept="image/*" hidden>
-                            </div>
-                            <div class="upload-preview" id="uploadPreview"></div>
-                        </div>
-                    </div>
 
-                    <!-- Pickup Information -->
-                    <div class="form-section-modern">
-                        <div class="section-header">
-                            <i class="fas fa-truck"></i>
-                            <h3>Pickup Information</h3>
-                        </div>
-                        <div class="form-grid">
-                            <div class="form-group-modern">
-                                <label for="pickupDate">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    Preferred Pickup Date
-                                </label>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickupDate">Preferred Pickup Date</label>
                                 <input type="date" id="pickupDate" name="pickupDate">
                             </div>
-                            <div class="form-group-modern checkbox-modern">
+                            <div class="form-group checkbox-group">
                                 <input type="checkbox" id="urgentPickup" name="urgentPickup">
-                                <label for="urgentPickup">
-                                    <i class="fas fa-bolt"></i>
-                                    Urgent pickup required (same day/next day)
-                                </label>
+                                <label for="urgentPickup" class="checkbox-label">Urgent pickup required (same day/next day)</label>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Agreement -->
-                    <div class="agreement-section">
-                        <div class="form-group-modern checkbox-modern">
-                            <input type="checkbox" id="agreement" name="agreement" required>
-                            <label for="agreement">
-                                I agree to the terms and conditions and understand that the final quote may vary based on actual inspection of materials. I consent to being contacted regarding this quote. *
-                            </label>
-                        </div>
+                    <div class="form-group checkbox-group agreement-group">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement" class="agreement-label">I agree to the <a href="#" class="terms-link">terms and conditions</a> and consent to being contacted regarding this quote. *</label>
                     </div>
 
-                    <!-- Form Actions -->
-                    <div class="form-actions-modern">
-                        <button type="button" class="btn-calculate" onclick="calculateEstimate()">
-                            <i class="fas fa-calculator"></i>
-                            Calculate Estimate
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-outline btn-dark-outline" onclick="calculateEstimate()">
+                            <i class="fas fa-dollar-sign"></i> Calculate Estimate
                         </button>
-                        <button type="submit" class="btn-submit-quote">
-                            <i class="fas fa-paper-plane"></i>
-                            Submit Quote Request
-                            <span class="btn-loading">
-                                <i class="fas fa-spinner fa-spin"></i>
-                            </span>
+                        <button type="submit" class="btn btn-primary btn-dark-primary">
+                            Submit Quote Request <i class="fas fa-arrow-right"></i>
                         </button>
                     </div>
                 </form>
             </div>
 
-            <!-- Sidebar -->
-            <div class="modern-quote-sidebar">
-                <!-- Estimate Card -->
-                <div class="sidebar-card estimate-card-modern" id="estimateCard">
-                    <div class="card-header">
-                        <i class="fas fa-coins"></i>
-                        <h3>Estimated Value</h3>
-                    </div>
-                    <div class="estimate-value-modern" id="estimateValue">$0.00</div>
-                    <p class="estimate-note">Based on current market rates. Final quote determined after physical inspection.</p>
-                    <div class="estimate-breakdown" id="estimateBreakdown">
-                        <div class="breakdown-item">
-                            <span>Metal Price:</span>
-                            <span id="metalPrice">$0.00/kg</span>
-                        </div>
-                        <div class="breakdown-item">
-                            <span>Weight:</span>
-                            <span id="breakdownWeight">0 kg</span>
-                        </div>
-                    </div>
+            <div class="quote-sidebar-modern">
+                <div class="estimate-card" id="estimateCard" style="display: none;">
+                    <h3 class="card-heading">💰 Estimated Value</h3>
+                    <div class="estimate-value" id="estimateValue">$0.00</div>
+                    <p class="card-note">Estimated value based on current market rates. Final quote may vary after physical inspection.</p>
                 </div>
 
-                <!-- Pricing Card -->
-                <div class="sidebar-card pricing-card-modern">
-                    <div class="card-header">
-                        <i class="fas fa-chart-bar"></i>
-                        <h3>Current Metal Prices</h3>
-                        <div class="price-badge">Live</div>
-                    </div>
-                    <p class="card-subtitle">Today's rates per kilogram (AUD)</p>
-                    <div class="price-list-modern">
-                        <div class="price-item-modern premium">
-                            <div class="metal-info">
-                                <i class="fas fa-bolt"></i>
-                                <span>Copper</span>
-                            </div>
-                            <span class="price">$8.50/kg</span>
+                <div class="pricing-card">
+                    <h3 class="card-heading">Current Metal Prices <i class="fas fa-tag"></i></h3>
+                    <p class="card-note">Today's rates per kilogram (AUD)</p>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-metal">Copper</span>
+                            <span class="price-rate">$8.50/kg</span>
                         </div>
-                        <div class="price-item-modern">
-                            <div class="metal-info">
-                                <i class="fas fa-cube"></i>
-                                <span>Aluminum</span>
-                            </div>
-                            <span class="price">$2.20/kg</span>
+                        <div class="price-item">
+                            <span class="price-metal">Aluminum</span>
+                            <span class="price-rate">$2.20/kg</span>
                         </div>
-                        <div class="price-item-modern">
-                            <div class="metal-info">
-                                <i class="fas fa-cog"></i>
-                                <span>Steel</span>
-                            </div>
-                            <span class="price">$0.45/kg</span>
+                        <div class="price-item">
+                            <span class="price-metal">Steel</span>
+                            <span class="price-rate">$0.45/kg</span>
                         </div>
-                        <div class="price-item-modern premium">
-                            <div class="metal-info">
-                                <i class="fas fa-tint"></i>
-                                <span>Brass</span>
-                            </div>
-                            <span class="price">$6.80/kg</span>
+                        <div class="price-item">
+                            <span class="price-metal">Brass</span>
+                            <span class="price-rate">$6.80/kg</span>
                         </div>
-                        <div class="price-item-modern premium">
-                            <div class="metal-info">
-                                <i class="fas fa-utensils"></i>
-                                <span>Stainless Steel</span>
-                            </div>
-                            <span class="price">$3.20/kg</span>
+                        <div class="price-item">
+                            <span class="price-metal">Stainless Steel</span>
+                            <span class="price-rate">$3.20/kg</span>
                         </div>
                     </div>
-                    <div class="price-footer">
-                        <i class="fas fa-info-circle"></i>
-                        <span>Prices subject to market fluctuations</span>
-                    </div>
+                    <p class="price-note">* Prices subject to market fluctuations</p>
                 </div>
 
-                <!-- Help Card -->
-                <div class="sidebar-card help-card-modern">
-                    <div class="card-header">
-                        <i class="fas fa-life-ring"></i>
-                        <h3>Need Help?</h3>
-                    </div>
-                    <p class="card-subtitle">Our metal experts are here to assist you</p>
-                    <div class="help-actions">
-                        <button class="help-btn phone" onclick="window.open('tel:0405024780', '_self')">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <span class="btn-title">Call Now</span>
-                                <span class="btn-subtitle">0405 024 780</span>
-                            </div>
-                        </button>
-                        <button class="help-btn whatsapp" onclick="window.open('https://wa.me/61405024780', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            <div>
-                                <span class="btn-title">WhatsApp</span>
-                                <span class="btn-subtitle">Instant chat</span>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="help-features">
-                        <div class="help-feature">
-                            <i class="fas fa-clock"></i>
-                            <span>2-hour response time</span>
-                        </div>
-                        <div class="help-feature">
-                            <i class="fas fa-user-tie"></i>
-                            <span>Expert advice</span>
-                        </div>
+                <div class="help-card">
+                    <h3 class="card-heading">Need Help? <i class="fas fa-headset"></i></h3>
+                    <p class="card-note">Our experts are here to assist you with any query.</p>
+                    <div class="help-buttons">
+                        <a href="tel:+61731234567" class="btn btn-dark-outline">
+                            <i class="fas fa-phone"></i> Call Us Now
+                        </a>
+                        <a href="https://wa.me/61731234567?text=Hi%2C%20I%20need%20help%20with%20my%20quote" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Support
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </div>
-            
 
      
 <!-- Simple Modern FAB -->

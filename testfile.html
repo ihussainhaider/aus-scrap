@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Debug</title>
+  <style>
+    /* Quote section with waves */
+#quote-section {
+  position: relative;
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.wave-top,
+.wave-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 1;
+}
+
+.wave-top {
+  top: 0;
+}
+
+.wave-bottom {
+  bottom: 0;
+}
+
+ .wave-top svg, .wave-bottom svg {
+  width: 200%;
+  height: 100px;
+  display: block;
+  animation: waveMove 6s ease-in-out infinite alternate;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+@keyframes waveMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-45%); }
+}
+  </style>
+</head>
+<body>
+<section  id="quote-section">
+  <!-- Top Wave -->
+  <div class="wave-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path fill="url(#topGradient)" fill-opacity="1" 
+        d="M0,80 C320,10 1120,150 1440,60 L1440,0 L0,0 Z"></path>
+      <defs>
+        <linearGradient id="topGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#cfe9ff"/>
+          <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- Your content -->
+  <div class="container">
+    <!-- Your section content here -->
+  </div>
+
+  <!-- Bottom Wave -->
+  <div class="wave-bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path fill="url(#bottomGradient)" fill-opacity="1"
+        d="M0,60 C360,150 1080,0 1440,90 L1440,150 L0,150 Z"></path>
+      <defs>
+        <linearGradient id="bottomGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="100%" stop-color="#cfe9ff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+            <!-- Features Section -->
+            <section class="features">
+                <!-- Decorative Top Wave -->
+  <div class="wave-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path fill="url(#topGradient)" fill-opacity="1" 
+        d="M0,80 C320,10 1120,150 1440,60 L1440,0 L0,0 Z"></path>
+      <defs>
+        <linearGradient id="topGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#cfe9ff"/>
+          <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose AusScrap?</h2>
+                        <p>We combine decades of industry experience with cutting-edge technology to deliver exceptional results</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon eco">♻</div>
+                            <h3>Eco-Friendly Recycling</h3>
+                            <p>State-of-the-art recycling processes that protect our environment</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon truck">🚛</div>
+                            <h3>Free Collection</h3>
+                            <p>Convenient pickup service for all your scrap metal needs</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon money">💰</div>
+                            <h3>Best Prices</h3>
+                            <p>Competitive rates for all types of metal scrap</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon clock">🕐</div>
+                            <h3>24/7 Service</h3>
+                            <p>Round-the-clock availability for urgent requirements</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Decorative Bottom Wave -->
+  <div class="wave-bottom">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path fill="url(#bottomGradient)" fill-opacity="1"
+        d="M0,60 C360,150 1080,0 1440,90 L1440,150 L0,150 Z"></path>
+      <defs>
+        <linearGradient id="bottomGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="100%" stop-color="#cfe9ff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+                
+            </section>
+
+
+
+            
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+        <!-- About Page -->
+        <div id="aboutPage" class="page">
+            <div class="container page-content">
+                <div class="page-header">
+                    <h1>About AusScrap</h1>
+                    <p>Leading Australia's metal recycling industry with sustainable solutions, innovative technology, and unwavering commitment to our environment and customers.</p>
+                </div>
+
+                <section class="about-story">
+                    <div class="story-content">
+                        <div class="story-text">
+                            <h2>Our Story</h2>
+                            <div class="story-paragraphs">
+                                <p>Founded in 1998, AusScrap began as a small family-owned business with a vision to revolutionize metal recycling in Australia. What started with a single truck and unwavering determination has grown into one of the nation's most trusted scrap metal recycling companies.</p>
+                                <p>Over the past 25 years, we've processed millions of tons of metal waste, helping businesses and individuals across Australia turn their scrap into valuable resources while contributing to a more sustainable future.</p>
+                                <p>Today, we operate state-of-the-art facilities equipped with the latest recycling technology, serving customers nationwide with the same family values that built our foundation.</p>
+                            </div>
+                        </div>
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1719399924262-ebb6f2a8de80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWN5Y2xpbmclMjBidXNpbmVzcyUyMHRlYW18ZW58MXx8fHwxNzU5NDk0NTU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AusScrap team">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="stats-section">
+                    <div class="stats-content">
+                        <div class="section-header">
+                            <h2>Our Impact</h2>
+                            <p>Numbers that showcase our commitment to excellence and sustainability</p>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">25+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">10,000+</div>
+                                <div class="stat-label">Tons Recycled Monthly</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">95%</div>
+                                <div class="stat-label">Customer Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Services Page -->
+        <div id="servicesPage" class="page">
+            <div class="container page-content">
+                <div class="page-header">
+                    <h1>Our Services</h1>
+                    <p>Comprehensive metal recycling solutions for every need. From residential pickup to large-scale industrial processing, we've got you covered.</p>
+                </div>
+
+                <section class="services-detailed">
+                    <div class="services-grid-detailed">
+                        <div class="service-detailed-card">
+                            <img src="https://images.unsplash.com/photo-1608197554045-3a9d14746f3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY3JhcCUyMG1ldGFsJTIweWFyZHxlbnwxfHx8fDE3NTk0OTQ1NTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Metal Collection">
+                            <div class="service-detailed-content">
+                                <div class="service-icon truck">🚛</div>
+                                <h3>Metal Collection & Pickup</h3>
+                                <p>Free collection service for all types of scrap metal with flexible scheduling to suit your needs.</p>
+                                <ul class="service-features">
+                                    <li>Free pickup service</li>
+                                    <li>Flexible scheduling</li>
+                                    <li>All metal types</li>
+                                    <li>Same-day collection available</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="service-detailed-card">
+                            <img src="https://images.unsplash.com/photo-1635961179148-3d886568775c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVjeWNsaW5nJTIwZmFjaWxpdHl8ZW58MXx8fHwxNzU5NDk0NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Industrial Scrap">
+                            <div class="service-detailed-content">
+                                <div class="service-icon factory">🏭</div>
+                                <h3>Industrial Scrap Processing</h3>
+                                <p>Large-scale industrial metal waste management with specialized handling for manufacturing facilities.</p>
+                                <ul class="service-features">
+                                    <li>Industrial-grade processing</li>
+                                    <li>Bulk handling</li>
+                                    <li>Compliance certificates</li>
+                                    <li>Waste audit reports</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="service-detailed-card">
+                            <img src="https://images.unsplash.com/photo-1625662276901-4a7ec44fbeed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNjcmFwJTIwcmVjeWNsaW5nfGVufDF8fHx8MTc1OTQ5NDU1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Residential Service">
+                            <div class="service-detailed-content">
+                                <div class="service-icon home">🏠</div>
+                                <h3>Residential Scrap Service</h3>
+                                <p>Convenient home collection service for household metal items, appliances, and renovation waste.</p>
+                                <ul class="service-features">
+                                    <li>Home collection</li>
+                                    <li>Appliance removal</li>
+                                    <li>Renovation waste</li>
+                                    <li>Weekend availability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pricing-section">
+                    <div class="section-header">
+                        <h2>Current Metal Prices</h2>
+                        <p>Competitive rates updated daily. Prices may vary based on quantity and quality.</p>
+                    </div>
+                    <div class="pricing-grid">
+                        <div class="price-card">
+                            <h3>Copper <span class="grade premium">Premium</span></h3>
+                            <div class="price">$8.50/kg</div>
+                            <p>Current market rate</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Aluminum <span class="grade standard">Standard</span></h3>
+                            <div class="price">$2.20/kg</div>
+                            <p>Current market rate</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Steel <span class="grade standard">Standard</span></h3>
+                            <div class="price">$0.45/kg</div>
+                            <p>Current market rate</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Brass <span class="grade premium">Premium</span></h3>
+                            <div class="price">$6.80/kg</div>
+                            <p>Current market rate</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Stainless Steel <span class="grade premium">Premium</span></h3>
+                            <div class="price">$3.20/kg</div>
+                            <p>Current market rate</p>
+                        </div>
+                        <div class="price-card">
+                            <h3>Lead <span class="grade standard">Standard</span></h3>
+                            <div class="price">$2.10/kg</div>
+                            <p>Current market rate</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="pricing-note">* Prices are indicative and subject to market fluctuations. Contact us for current rates.</p>
+                        <button class="btn btn-primary" onclick="showPage('quote')">Get Accurate Quote</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Offers Page -->
+        <div id="offersPage" class="page">
+            <div class="container page-content">
+                <div class="page-header">
+                    <h1>Special Offers</h1>
+                    <p>Take advantage of our exclusive deals and promotions. More value for your scrap metal with Australia's most generous offers.</p>
+                </div>
+
+                <section class="offers-section">
+                    <div class="offers-header">
+                        <h2>Current Offers</h2>
+                        <span class="limited-time">⏰ Limited Time</span>
+                    </div>
+                    <div class="offers-grid">
+                        <div class="offer-card featured">
+                            <div class="offer-badge">FEATURED OFFER</div>
+                            <img src="https://images.unsplash.com/photo-1625662276901-4a7ec44fbeed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNjcmFwJTIwcmVjeWNsaW5nfGVufDF8fHx8MTc1OTQ5NDU1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="New Customer Bonus">
+                            <div class="offer-discount">15% EXTRA</div>
+                            <div class="offer-content">
+                                <div class="offer-icon">⭐</div>
+                                <h3>New Customer Bonus</h3>
+                                <p>Get 15% extra on your first scrap metal collection with us</p>
+                                <div class="offer-validity">Valid until Dec 31, 2024</div>
+                                <div class="offer-terms">Minimum 50kg of mixed metals. New customers only.</div>
+                                <button class="btn btn-primary" onclick="showPage('quote')">Claim This Offer</button>
+                            </div>
+                        </div>
+
+                        <div class="offer-card featured">
+                            <div class="offer-badge">FEATURED OFFER</div>
+                            <img src="https://images.unsplash.com/photo-1635961179148-3d886568775c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVjeWNsaW5nJTIwZmFjaWxpdHl8ZW58MXx8fHwxNzU5NDk0NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Bulk Collection Deal">
+                            <div class="offer-discount">UP TO 25% EXTRA</div>
+                            <div class="offer-content">
+                                <div class="offer-icon">⚡</div>
+                                <h3>Bulk Collection Deal</h3>
+                                <p>Save more when you have more! Graduated pricing for large quantities</p>
+                                <div class="offer-validity">Ongoing offer</div>
+                                <div class="offer-terms">Applies to collections over 500kg. Contact for pricing tiers.</div>
+                                <button class="btn btn-primary" onclick="showPage('quote')">Claim This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="loyalty-section">
+                    <div class="loyalty-content">
+                        <div class="loyalty-header">
+                            <div class="loyalty-icon">🎁</div>
+                            <h2>AusScrap Loyalty Program</h2>
+                            <p>Join our loyalty program and enjoy exclusive benefits, priority service, and bonus rewards</p>
+                        </div>
+                        <div class="loyalty-benefits">
+                            <div class="benefit-item">✓ Priority scheduling for regular customers</div>
+                            <div class="benefit-item">✓ Exclusive pricing on premium metals</div>
+                            <div class="benefit-item">✓ Free metal identification and assessment</div>
+                            <div class="benefit-item">✓ Quarterly bonus payments for top customers</div>
+                            <div class="benefit-item">✓ Extended collection hours availability</div>
+                            <div class="benefit-item">✓ Dedicated customer service line</div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="showPage('contact')">Join Loyalty Program</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contactPage" class="page">
+            <div class="container page-content">
+                <div class="page-header">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with Australia's leading scrap metal recycling experts. We're here to help with all your metal recycling needs.</p>
+                </div>
+
+                <section class="contact-methods">
+                    <div class="contact-grid">
+                        <div class="contact-card" onclick="window.open('tel:+61731234567', '_self')">
+                            <div class="contact-icon">📞</div>
+                            <h3>Phone</h3>
+                            <p>+61 7 3123 4567</p>
+                            <p>1800 AUS-SCRAP</p>
+                        </div>
+                        <div class="contact-card" onclick="window.open('mailto:info@ausscrap.com.au', '_self')">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>info@ausscrap.com.au</p>
+                            <p>quotes@ausscrap.com.au</p>
+                        </div>
+                        <div class="contact-card" onclick="window.open('https://maps.google.com/?q=123+Industrial+Drive+Brisbane+QLD+4000', '_blank')">
+                            <div class="contact-icon">📍</div>
+                            <h3>Address</h3>
+                            <p>123 Industrial Drive</p>
+                            <p>Brisbane, QLD 4000</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">🕐</div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 7:00 AM - 6:00 PM</p>
+                            <p>Sat: 8:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-form-section">
+                    <div class="contact-form-grid">
+                        <div class="contact-form-container">
+                            <div class="form-header">
+                                <h2>Send Us a Message</h2>
+                                <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                            </div>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contactName">Full Name *</label>
+                                        <input type="text" id="contactName" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactEmail">Email Address *</label>
+                                        <input type="email" id="contactEmail" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contactPhone">Phone Number</label>
+                                        <input type="tel" id="contactPhone" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactSubject">Subject *</label>
+                                        <select id="contactSubject" name="subject" required>
+                                            <option value="">Select a subject</option>
+                                            <option value="quote">Get a Quote</option>
+                                            <option value="pickup">Schedule Pickup</option>
+                                            <option value="pricing">Pricing Inquiry</option>
+                                            <option value="partnership">Business Partnership</option>
+                                            <option value="complaint">Complaint</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactMessage">Message *</label>
+                                    <textarea id="contactMessage" name="message" rows="5" required placeholder="Tell us about your scrap metal needs, quantities, location, etc."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    📤 Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="quick-actions">
+                            <div class="quick-actions-card">
+                                <h3>Quick Actions</h3>
+                                <p>Need immediate assistance? Use these quick options</p>
+                                <div class="quick-buttons">
+                                    <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/61731234567?text=Hi%2C%20I%27d%20like%20to%20get%20more%20information%20about%20your%20services', '_blank')">
+                                        💬 WhatsApp Chat
+                                    </button>
+                                    <button class="btn btn-outline" onclick="window.open('tel:+61731234567', '_self')">
+                                        📞 Call Now
+                                    </button>
+                                    <button class="btn btn-outline" onclick="window.open('mailto:info@ausscrap.com.au', '_self')">
+                                        📧 Send Email
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="emergency-card">
+                                <h3>Emergency Service</h3>
+                                <p>24/7 emergency collection available</p>
+                                <p class="emergency-desc">For urgent industrial clean-ups, hazardous material removal, or emergency services</p>
+                                <button class="btn btn-emergency" onclick="window.open('tel:1800EMERGENCY', '_self')">
+                                    📞 Emergency Line: 1800 EMERGENCY
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Quote Page -->
+        <div id="quotePage" class="page">
+            <div class="container page-content">
+                <div class="page-header">
+                    <h1>Get Your Free Quote</h1>
+                    <p>Get an accurate, competitive quote for your scrap metal in minutes. Our expert team will assess your materials and provide the best possible price.</p>
+                </div>
+
+                <section class="quote-benefits">
+                    <div class="benefits-grid">
+                        <div class="benefit-item">✅ Free, no-obligation quotes</div>
+                        <div class="benefit-item">✅ Competitive market rates</div>
+                        <div class="benefit-item">✅ Free pickup service</div>
+                        <div class="benefit-item">✅ Same-day quotes available</div>
+                        <div class="benefit-item">✅ Professional assessment</div>
+                        <div class="benefit-item">✅ Instant payment options</div>
+                    </div>
+                </section>
+
+                <section class="quote-form-section">
+                    <div class="quote-grid">
+                        <div class="quote-form-container">
+                            <div class="form-header">
+                                <h2>🧮 Quote Request Form</h2>
+                                <p>Fill out the details below for an accurate quote. All fields marked with * are required.</p>
+                            </div>
+                            <form class="quote-form" id="quoteForm">
+                                <div class="form-section">
+                                    <h3>Personal Information</h3>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="quoteName">Full Name *</label>
+                                            <input type="text" id="quoteName" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="quoteEmail">Email Address *</label>
+                                            <input type="email" id="quoteEmail" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="quotePhone">Phone Number *</label>
+                                            <input type="tel" id="quotePhone" name="phone" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="quoteAddress">Pickup Address *</label>
+                                            <input type="text" id="quoteAddress" name="address" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>Metal Information</h3>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="metalType">Metal Type *</label>
+                                            <select id="metalType" name="metalType" required onchange="calculateEstimate()">
+                                                <option value="">Select metal type</option>
+                                                <option value="copper" data-price="8.50">Copper - $8.50/kg (Pipes, wiring, fittings)</option>
+                                                <option value="aluminum" data-price="2.20">Aluminum - $2.20/kg (Cans, wheels, siding)</option>
+                                                <option value="steel" data-price="0.45">Steel - $0.45/kg (Structural steel, appliances)</option>
+                                                <option value="brass" data-price="6.80">Brass - $6.80/kg (Fixtures, decorative items)</option>
+                                                <option value="stainless" data-price="3.20">Stainless Steel - $3.20/kg (Kitchen equipment, medical)</option>
+                                                <option value="lead" data-price="2.10">Lead - $2.10/kg (Batteries, pipes)</option>
+                                                <option value="mixed" data-price="1.50">Mixed Metals - $1.50/kg (Various metal types)</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="estimatedWeight">Estimated Weight (kg) *</label>
+                                            <input type="number" id="estimatedWeight" name="weight" min="1" required onchange="calculateEstimate()">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <textarea id="description" name="description" rows="3" placeholder="Describe your metal items (condition, quantity, specific details...)"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>📤 Photos (Optional but Recommended)</h3>
+                                    <div class="form-group">
+                                        <label for="photos">Upload Photos</label>
+                                        <input type="file" id="photos" name="photos" multiple accept="image/*">
+                                        <p class="file-note">Upload photos of your metal items for a more accurate quote (Max 5 photos, 10MB each)</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>🚛 Pickup Information</h3>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="pickupDate">Preferred Pickup Date</label>
+                                            <input type="date" id="pickupDate" name="pickupDate">
+                                        </div>
+                                        <div class="form-group checkbox-group">
+                                            <input type="checkbox" id="urgentPickup" name="urgentPickup">
+                                            <label for="urgentPickup">Urgent pickup required (same day/next day)</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="agreement" name="agreement" required>
+                                    <label for="agreement">I agree to the terms and conditions and understand that the final quote may vary based on actual inspection of materials. I consent to being contacted regarding this quote. *</label>
+                                </div>
+
+                                <div class="form-buttons">
+                                    <button type="button" class="btn btn-outline" onclick="calculateEstimate()">
+                                        🧮 Calculate Estimate
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">
+                                        Submit Quote Request
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="quote-sidebar">
+                            <div class="estimate-card" id="estimateCard" style="display: none;">
+                                <h3>💰 Estimated Value</h3>
+                                <div class="estimate-value" id="estimateValue">$0.00</div>
+                                <p>Estimated value based on current market rates. Final quote may vary after physical inspection.</p>
+                            </div>
+
+                            <div class="pricing-card">
+                                <h3>Current Metal Prices</h3>
+                                <p>Today's rates per kilogram (AUD)</p>
+                                <div class="price-list">
+                                    <div class="price-item">
+                                        <span>Copper</span>
+                                        <span>$8.50/kg</span>
+                                    </div>
+                                    <div class="price-item">
+                                        <span>Aluminum</span>
+                                        <span>$2.20/kg</span>
+                                    </div>
+                                    <div class="price-item">
+                                        <span>Steel</span>
+                                        <span>$0.45/kg</span>
+                                    </div>
+                                    <div class="price-item">
+                                        <span>Brass</span>
+                                        <span>$6.80/kg</span>
+                                    </div>
+                                    <div class="price-item">
+                                        <span>Stainless Steel</span>
+                                        <span>$3.20/kg</span>
+                                    </div>
+                                </div>
+                                <p class="price-note">* Prices subject to market fluctuations</p>
+                            </div>
+
+                            <div class="help-card">
+                                <h3>Need Help?</h3>
+                                <p>Our experts are here to assist you</p>
+                                <div class="help-buttons">
+                                    <button class="btn btn-outline btn-small" onclick="window.open('tel:+61731234567', '_self')">
+                                        📞 Call: +61 7 3123 4567
+                                    </button>
+                                    <button class="btn btn-outline btn-small" onclick="window.open('https://wa.me/61731234567?text=Hi%2C%20I%20need%20help%20with%20my%20quote', '_blank')">
+                                        💬 WhatsApp Support
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>

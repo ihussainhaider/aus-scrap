@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AusScrap - Australia's Leading Metal Recycling Specialists</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo" onclick="showPage('home')">
+                    <h1>AusScrap</h1>
+                    <p>Metal Recycling Solutions</p>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <button class="nav-link" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                    <button class="nav-link" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                    <button class="nav-link" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                    <button class="nav-link" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                    <button class="nav-link active" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                    <button class="nav-link active" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <button class="nav-link-mobile" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                <button class="nav-link-mobile" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                <button class="nav-link-mobile" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                <button class="nav-link-mobile" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                <button class="nav-link-mobile" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                <button class="nav-link-mobile" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Content -->
+<div class="container page-content">
+    <div class="page-header modern-contact-header">
+        <span class="page-badge">
+            <i class="fas fa-comments"></i>
+            Get In Touch
+        </span>
+        <h1>Contact AusScrap</h1>
+        <p class="modern-subtitle">Reach out to Australia's leading scrap metal recycling experts. We're here to help with all your metal recycling needs across Canberra and surrounding areas.</p>
+    </div>
+
+    <!-- Contact Methods Section -->
+    <section class="modern-contact-methods">
+        <div class="modern-contact-grid">
+            <div class="modern-contact-card" data-contact="phone" onclick="window.open('tel:+61405024780', '_self')">
+                <div class="contact-icon-wrapper">
+                    <div class="modern-contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-badge">Live Support</div>
+                </div>
+                <h3>Phone</h3>
+                <div class="contact-details">
+                    <p class="contact-main">0405 024 780</p>
+                    <p class="contact-secondary">1800 AUS-SCRAP</p>
+                </div>
+                <div class="contact-action">
+                    <span>Click to call instantly</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="modern-contact-card" data-contact="email" onclick="window.open('mailto:info@ausscrap.com.au', '_self')">
+                <div class="contact-icon-wrapper">
+                    <div class="modern-contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-badge">Quick Response</div>
+                </div>
+                <h3>Email</h3>
+                <div class="contact-details">
+                    <p class="contact-main">info@ausscrap.com.au</p>
+                    <p class="contact-secondary">quotes@ausscrap.com.au</p>
+                </div>
+                <div class="contact-action">
+                    <span>Click to email us</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="modern-contact-card" data-contact="location" onclick="window.open('https://maps.google.com/?q=Canberra+ACT', '_blank')">
+                <div class="contact-icon-wrapper">
+                    <div class="modern-contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-badge">Service Area</div>
+                </div>
+                <h3>Location</h3>
+                <div class="contact-details">
+                    <p class="contact-main">Canberra & Surrounds</p>
+                    <p class="contact-secondary">ACT Region</p>
+                </div>
+                <div class="contact-action">
+                    <span>View service area</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="modern-contact-card" data-contact="hours">
+                <div class="contact-icon-wrapper">
+                    <div class="modern-contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-badge">Available</div>
+                </div>
+                <h3>Business Hours</h3>
+                <div class="contact-details">
+                    <p class="contact-main">Mon-Fri: 7:00 AM - 6:00 PM</p>
+                    <p class="contact-secondary">Sat: 8:00 AM - 4:00 PM</p>
+                </div>
+                <div class="contact-status">
+                    <div class="status-indicator live"></div>
+                    <span>We're currently open</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Actions Section -->
+    <section class="modern-contact-form-section">
+        <div class="modern-contact-layout">
+            <!-- Contact Form -->
+            <div class="modern-form-container">
+                <div class="form-header-modern">
+                    <div class="form-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <div>
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 2 hours during business hours</p>
+                    </div>
+                </div>
+
+                <form class="modern-contact-form" id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group-modern">
+                            <label for="contactName">
+                                <i class="fas fa-user"></i>
+                                Full Name *
+                            </label>
+                            <input type="text" id="contactName" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group-modern">
+                            <label for="contactEmail">
+                                <i class="fas fa-envelope"></i>
+                                Email Address *
+                            </label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group-modern">
+                            <label for="contactPhone">
+                                <i class="fas fa-phone"></i>
+                                Phone Number
+                            </label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="0400 000 000">
+                        </div>
+                        
+                        <div class="form-group-modern">
+                            <label for="contactSubject">
+                                <i class="fas fa-tag"></i>
+                                Subject *
+                            </label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="quote">Get a Quote</option>
+                                <option value="pickup">Schedule Pickup</option>
+                                <option value="pricing">Pricing Inquiry</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group-modern full-width">
+                        <label for="contactMessage">
+                            <i class="fas fa-comment-alt"></i>
+                            Message *
+                        </label>
+                        <textarea id="contactMessage" name="message" rows="6" required placeholder="Tell us about your scrap metal needs, quantities, location, and any specific requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-modern-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                        <span class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Quick Actions Sidebar -->
+            <div class="modern-actions-sidebar">
+                <!-- Immediate Assistance Card -->
+                <div class="action-card immediate-help">
+                    <div class="action-header">
+                        <div class="action-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Immediate Assistance</h3>
+                    </div>
+                    <p>Need quick answers? Connect with us directly</p>
+                    
+                    <div class="action-buttons">
+                        <button class="action-btn whatsapp" onclick="window.open('https://wa.me/61405024780?text=Hi%20AusScrap%2C%20I%27d%20like%20to%20get%20more%20information%20about%20your%20services', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <span class="btn-title">WhatsApp Chat</span>
+                                <span class="btn-subtitle">Instant messaging</span>
+                            </div>
+                        </button>
+                        
+                        <button class="action-btn phone" onclick="window.open('tel:0405024780', '_self')">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span class="btn-title">Call Now</span>
+                                <span class="btn-subtitle">Direct line</span>
+                            </div>
+                        </button>
+                        
+                        <button class="action-btn email" onclick="window.open('mailto:info@ausscrap.com.au', '_self')">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="btn-title">Send Email</span>
+                                <span class="btn-subtitle">Quick response</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Emergency Services Card -->
+                <div class="action-card emergency-services">
+                    <div class="action-header">
+                        <div class="action-icon emergency">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Emergency Services</h3>
+                    </div>
+                    <p>24/7 emergency scrap collection and hazardous material removal</p>
+                    
+                    <div class="emergency-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Availability</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Rapid Response</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Hazardous Material</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-emergency" onclick="window.open('tel:1800EMERGENCY', '_self')">
+                        <i class="fas fa-phone"></i>
+                        Emergency Line: 1800 EMERGENCY
+                    </button>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>2-hour response time</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free scrap assessment</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No obligation quotes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+       
+ 
+<!-- Simple Modern FAB -->
+<div class="floating-actions-simple">
+    <button class="fab-simple whatsapp" 
+            onclick="window.open('https://wa.me/61405024780', '_blank')"
+            title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+    <button class="fab-simple phone" 
+            onclick="window.open('tel:0405024780', '_self')"
+            title="Call Us">
+        <i class="fas fa-phone"></i>
+    </button>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AusScrap</h3>
+                    <p>Australia's leading metal recycling company, committed to sustainable practices and exceptional customer service.</p>
+                    <button onclick="window.open('tel:+61731234567', '_self')" class="footer-phone">
+                        +61 7 3123 4567
+                    </button>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/services.html'">Metal Collection</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Industrial Recycling</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Residential Service</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Commercial Solutions</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/about.html'">About Us</button></li>
+                        <li><button onclick="window.location.href='/pages/offers.html'">Current Offers</button></li>
+                        <li><button onclick="window.location.href='/pages/contact.html'">Contact</button></li>
+                        <li><button onclick="window.location.href='/pages/quote.html'">Get Quote</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>123 Industrial Drive<br>Brisbane, QLD 4000</p>
+                        <p>info@ausscrap.com.au</p>
+                        <p>Mon-Fri: 7AM-6PM<br>Sat: 8AM-4PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AusScrap Metal Recycling. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AusScrap - Australia's Leading Metal Recycling Specialists</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo" onclick="showPage('home')">
+                    <h1>AusScrap</h1>
+                    <p>Metal Recycling Solutions</p>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                   <button class="nav-link" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                    <button class="nav-link" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                    <button class="nav-link" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                    <button class="nav-link active" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                    <button class="nav-link" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                    <button class="nav-link active" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <button class="nav-link-mobile" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                <button class="nav-link-mobile" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                <button class="nav-link-mobile" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                <button class="nav-link-mobile" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                <button class="nav-link-mobile" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                <button class="nav-link-mobile" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- offers Content -->
+    
+            <div class="container page-content">
+                <div class="page-header">
+                    <h1>Special Offers</h1>
+                    <p>Take advantage of our exclusive deals and promotions. More value for your scrap metal with Australia's most generous offers.</p>
+                </div>
+
+                <section class="offers-section">
+                    <div class="offers-header">
+                        <h2>Current Offers</h2>
+                        <span class="limited-time">⏰ Limited Time</span>
+                    </div>
+                    <div class="offers-grid">
+                        <div class="offer-card featured">
+                            <div class="offer-badge">FEATURED OFFER</div>
+                            <img src="https://images.unsplash.com/photo-1625662276901-4a7ec44fbeed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNjcmFwJTIwcmVjeWNsaW5nfGVufDF8fHx8MTc1OTQ5NDU1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="New Customer Bonus">
+                            <div class="offer-discount">15% EXTRA</div>
+                            <div class="offer-content">
+                                <div class="offer-icon">⭐</div>
+                                <h3>New Customer Bonus</h3>
+                                <p>Get 15% extra on your first scrap metal collection with us</p>
+                                <div class="offer-validity">Valid until Dec 31, 2024</div>
+                                <div class="offer-terms">Minimum 50kg of mixed metals. New customers only.</div>
+                                <button class="btn btn-primary" onclick="showPage('quote')">Claim This Offer</button>
+                            </div>
+                        </div>
+
+                        <div class="offer-card featured">
+                            <div class="offer-badge">FEATURED OFFER</div>
+                            <img src="https://images.unsplash.com/photo-1635961179148-3d886568775c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVjeWNsaW5nJTIwZmFjaWxpdHl8ZW58MXx8fHwxNzU5NDk0NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Bulk Collection Deal">
+                            <div class="offer-discount">UP TO 25% EXTRA</div>
+                            <div class="offer-content">
+                                <div class="offer-icon">⚡</div>
+                                <h3>Bulk Collection Deal</h3>
+                                <p>Save more when you have more! Graduated pricing for large quantities</p>
+                                <div class="offer-validity">Ongoing offer</div>
+                                <div class="offer-terms">Applies to collections over 500kg. Contact for pricing tiers.</div>
+                                <button class="btn btn-primary" onclick="showPage('quote')">Claim This Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="loyalty-section">
+                    <div class="loyalty-content">
+                        <div class="loyalty-header">
+                            <div class="loyalty-icon">🎁</div>
+                            <h2>AusScrap Loyalty Program</h2>
+                            <p>Join our loyalty program and enjoy exclusive benefits, priority service, and bonus rewards</p>
+                        </div>
+                        <div class="loyalty-benefits">
+                            <div class="benefit-item">✓ Priority scheduling for regular customers</div>
+                            <div class="benefit-item">✓ Exclusive pricing on premium metals</div>
+                            <div class="benefit-item">✓ Free metal identification and assessment</div>
+                            <div class="benefit-item">✓ Quarterly bonus payments for top customers</div>
+                            <div class="benefit-item">✓ Extended collection hours availability</div>
+                            <div class="benefit-item">✓ Dedicated customer service line</div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary" onclick="showPage('contact')">Join Loyalty Program</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        
+
+
+     
+<!-- Simple Modern FAB -->
+<div class="floating-actions-simple">
+    <button class="fab-simple whatsapp" 
+            onclick="window.open('https://wa.me/61405024780', '_blank')"
+            title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+    <button class="fab-simple phone" 
+            onclick="window.open('tel:0405024780', '_self')"
+            title="Call Us">
+        <i class="fas fa-phone"></i>
+    </button>
+</div>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AusScrap</h3>
+                    <p>Australia's leading metal recycling company, committed to sustainable practices and exceptional customer service.</p>
+                    <button onclick="window.open('tel:+61731234567', '_self')" class="footer-phone">
+                        +61 7 3123 4567
+                    </button>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/services.html'">Metal Collection</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Industrial Recycling</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Residential Service</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Commercial Solutions</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/about.html'">About Us</button></li>
+                        <li><button onclick="window.location.href='/pages/offers.html'">Current Offers</button></li>
+                        <li><button onclick="window.location.href='/pages/contact.html'">Contact</button></li>
+                        <li><button onclick="window.location.href='/pages/quote.html'">Get Quote</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>123 Industrial Drive<br>Brisbane, QLD 4000</p>
+                        <p>info@ausscrap.com.au</p>
+                        <p>Mon-Fri: 7AM-6PM<br>Sat: 8AM-4PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AusScrap Metal Recycling. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

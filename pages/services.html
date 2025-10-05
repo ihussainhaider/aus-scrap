@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AusScrap - Australia's Leading Metal Recycling Specialists</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo" onclick="window.location.href='../index.html'">
+                    <h1>AusScrap</h1>
+                    <p>Metal Recycling Solutions</p>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <button class="nav-link" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                    <button class="nav-link" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                    <button class="nav-link active" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                    <button class="nav-link" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                    <button class="nav-link" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                    <button class="nav-link active" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <button class="nav-link-mobile" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                <button class="nav-link-mobile" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                <button class="nav-link-mobile" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                <button class="nav-link-mobile" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                <button class="nav-link-mobile" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                <button class="nav-link-mobile" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Services Page -->
+            <div class="container page-content">
+    <!-- Modern Header -->
+    <div class="modern-page-header">
+        <span class="page-badge">
+            <i class="fas fa-conveyor-belt"></i>
+            Our Services
+        </span>
+        <h1>Comprehensive Metal Recycling Solutions</h1>
+        <p class="modern-subtitle">From residential pickup to large-scale industrial processing - professional scrap metal services tailored to your needs across Canberra and surrounding regions.</p>
+    </div>
+
+    <!-- Services Section -->
+    <section class="modern-services-section">
+        <div class="services-grid-modern">
+            <!-- Metal Collection Service -->
+            <div class="modern-service-card">
+                <div class="service-image-container">
+                    <img src="https://images.unsplash.com/photo-1608197554045-3a9d14746f3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY3JhcCUyMG1ldGFsJTIweWFyZHxlbnwxfHx8fDE3NTk0OTQ1NTN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Metal Collection Service">
+                    <div class="service-overlay">
+                        <div class="service-badge">
+                            <i class="fas fa-star"></i>
+                            Most Popular
+                        </div>
+                    </div>
+                </div>
+                <div class="service-content-modern">
+                    <div class="service-header">
+                        <div class="service-icon-modern">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h3>Metal Collection & Pickup</h3>
+                    </div>
+                    <p class="service-description">Professional collection service for all types of scrap metal with flexible scheduling to suit your business or residential needs.</p>
+                    
+                    <div class="service-features-modern">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free pickup service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Flexible scheduling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>All metal types accepted</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Same-day collection available</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <button class="btn-service" onclick="window.location.href='/pages/quote.html'">
+                            <i class="fas fa-calendar-check"></i>
+                            Schedule Pickup
+                        </button>
+                        <button class="btn-service-outline" onclick="window.open('tel:0405024780', '_self')">
+                            <i class="fas fa-phone-alt"></i>
+                            Call Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industrial Processing -->
+            <div class="modern-service-card">
+                <div class="service-image-container">
+                    <img src="https://images.unsplash.com/photo-1635961179148-3d886568775c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcmVjeWNsaW5nJTIwZmFjaWxpdHl8ZW58MXx8fHwxNzU5NDk0NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Industrial Scrap Processing">
+                    <div class="service-overlay">
+                        <div class="service-badge enterprise">
+                            <i class="fas fa-crown"></i>
+                            Enterprise
+                        </div>
+                    </div>
+                </div>
+                <div class="service-content-modern">
+                    <div class="service-header">
+                        <div class="service-icon-modern">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Industrial Scrap Processing</h3>
+                    </div>
+                    <p class="service-description">Large-scale industrial metal waste management with specialized handling, compliance documentation, and volume pricing for manufacturing facilities.</p>
+                    
+                    <div class="service-features-modern">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Industrial-grade processing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Bulk handling capabilities</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compliance certificates</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Waste audit reports</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-benefits">
+                        <div class="benefit-tag">
+                            <i class="fas fa-chart-line"></i>
+                            Volume Discounts
+                        </div>
+                        <div class="benefit-tag">
+                            <i class="fas fa-file-invoice"></i>
+                            Tax Documentation
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <button class="btn-service" onclick="window.location.href='/pages/quote.html'">
+                            <i class="fas fa-calculator"></i>
+                            Get Business Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Residential Service -->
+            <div class="modern-service-card">
+                <div class="service-image-container">
+                    <img src="https://images.unsplash.com/photo-1625662276901-4a7ec44fbeed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHNjcmFwJTIwcmVjeWNsaW5nfGVufDF8fHx8MTc1OTQ5NDU1M3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Residential Scrap Service">
+                    <div class="service-overlay">
+                        <div class="service-badge residential">
+                            <i class="fas fa-home"></i>
+                            Residential
+                        </div>
+                    </div>
+                </div>
+                <div class="service-content-modern">
+                    <div class="service-header">
+                        <div class="service-icon-modern">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Residential Scrap Service</h3>
+                    </div>
+                    <p class="service-description">Convenient home collection service for household metal items, appliances, renovation waste, and garage cleanouts with weekend availability.</p>
+                    
+                    <div class="service-features-modern">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Home collection service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Appliance removal</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Renovation waste handling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Weekend availability</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-benefits">
+                        <div class="benefit-tag">
+                            <i class="fas fa-clock"></i>
+                            Same-Day Service
+                        </div>
+                        <div class="benefit-tag">
+                            <i class="fas fa-dollar-sign"></i>
+                            Instant Cash Payment
+                        </div>
+                    </div>
+                    
+                    <div class="service-cta">
+                        <button class="btn-service" onclick="showPage('quote')">
+                            <i class="fas fa-truck"></i>
+                            Book Home Pickup
+                        </button>
+                        <button class="btn-service-outline" onclick="window.open('https://wa.me/61405024780', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="modern-pricing-section">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <span class="pricing-badge">
+                    <i class="fas fa-chart-line"></i>
+                    Live Market Prices
+                </span>
+                <h2>Current Metal Prices</h2>
+                <p>Competitive rates updated regularly. Get the best value for your scrap metal with our transparent pricing.</p>
+                <div class="price-update">
+                    <i class="fas fa-sync-alt"></i>
+                    Last updated: Today
+                </div>
+            </div>
+
+            <div class="modern-pricing-grid">
+                <div class="modern-price-card premium">
+                    <div class="price-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3>Copper</h3>
+                            <span class="metal-grade">Premium Grade</span>
+                        </div>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="price">8.50</span>
+                        <span class="unit">/kg</span>
+                    </div>
+                    <div class="price-description">
+                        High-grade wiring, pipes, and electrical components
+                    </div>
+                    <div class="price-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span>Stable market</span>
+                    </div>
+                </div>
+
+                <div class="modern-price-card">
+                    <div class="price-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div>
+                            <h3>Aluminum</h3>
+                            <span class="metal-grade">Standard Grade</span>
+                        </div>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="price">2.20</span>
+                        <span class="unit">/kg</span>
+                    </div>
+                    <div class="price-description">
+                        Cans, siding, automotive parts, and extrusions
+                    </div>
+                    <div class="price-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span>+2% this week</span>
+                    </div>
+                </div>
+
+                <div class="modern-price-card">
+                    <div class="price-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div>
+                            <h3>Steel</h3>
+                            <span class="metal-grade">Standard Grade</span>
+                        </div>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="price">0.45</span>
+                        <span class="unit">/kg</span>
+                    </div>
+                    <div class="price-description">
+                        Structural steel, appliances, and industrial scrap
+                    </div>
+                    <div class="price-trend">
+                        <i class="fas fa-minus trend-neutral"></i>
+                        <span>Market stable</span>
+                    </div>
+                </div>
+
+                <div class="modern-price-card premium">
+                    <div class="price-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div>
+                            <h3>Brass</h3>
+                            <span class="metal-grade">Premium Grade</span>
+                        </div>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="price">6.80</span>
+                        <span class="unit">/kg</span>
+                    </div>
+                    <div class="price-description">
+                        Fixtures, valves, and decorative brass items
+                    </div>
+                    <div class="price-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span>+5% this month</span>
+                    </div>
+                </div>
+
+                <div class="modern-price-card premium">
+                    <div class="price-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div>
+                            <h3>Stainless Steel</h3>
+                            <span class="metal-grade">Premium Grade</span>
+                        </div>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="price">3.20</span>
+                        <span class="unit">/kg</span>
+                    </div>
+                    <div class="price-description">
+                        Kitchen equipment, medical, and architectural
+                    </div>
+                    <div class="price-trend">
+                        <i class="fas fa-arrow-down trend-down"></i>
+                        <span>-1% this week</span>
+                    </div>
+                </div>
+
+                <div class="modern-price-card">
+                    <div class="price-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-car-battery"></i>
+                        </div>
+                        <div>
+                            <h3>Lead</h3>
+                            <span class="metal-grade">Standard Grade</span>
+                        </div>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">$</span>
+                        <span class="price">2.10</span>
+                        <span class="unit">/kg</span>
+                    </div>
+                    <div class="price-description">
+                        Batteries, weights, and radiation shielding
+                    </div>
+                    <div class="price-trend">
+                        <i class="fas fa-minus trend-neutral"></i>
+                        <span>Market stable</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-footer">
+                <div class="pricing-disclaimer">
+                    <i class="fas fa-info-circle"></i>
+                    <p>* Prices are indicative and subject to market fluctuations. Final pricing determined upon inspection of materials. Contact us for bulk pricing and current rates.</p>
+                </div>
+                <div class="pricing-cta">
+                    <button class="btn-modern-primary" onclick="window.location.href='/pages/quote.html'">
+                        <i class="fas fa-calculator"></i>
+                        Get Accurate Quote
+                    </button>
+                    <button class="btn-modern-outline" onclick="window.open('tel:0405024780', '_self')">
+                        <i class="fas fa-phone-alt"></i>
+                        Call for Pricing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+        
+
+
+    
+<!-- Simple Modern FAB -->
+<div class="floating-actions-simple">
+    <button class="fab-simple whatsapp" 
+            onclick="window.open('https://wa.me/61405024780', '_blank')"
+            title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+    <button class="fab-simple phone" 
+            onclick="window.open('tel:0405024780', '_self')"
+            title="Call Us">
+        <i class="fas fa-phone"></i>
+    </button>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AusScrap</h3>
+                    <p>Australia's leading metal recycling company, committed to sustainable practices and exceptional customer service.</p>
+                    <button onclick="window.open('tel:+61731234567', '_self')" class="footer-phone">
+                        +61 7 3123 4567
+                    </button>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/services.html'">Metal Collection</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Industrial Recycling</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Residential Service</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Commercial Solutions</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/about.html'">About Us</button></li>
+                        <li><button onclick="window.location.href='/pages/offers.html'">Current Offers</button></li>
+                        <li><button onclick="window.location.href='/pages/contact.html'">Contact</button></li>
+                        <li><button onclick="window.location.href='/pages/quote.html'">Get Quote</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>123 Industrial Drive<br>Brisbane, QLD 4000</p>
+                        <p>info@ausscrap.com.au</p>
+                        <p>Mon-Fri: 7AM-6PM<br>Sat: 8AM-4PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AusScrap Metal Recycling. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

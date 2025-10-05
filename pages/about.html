@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AusScrap - Australia's Leading Metal Recycling Specialists</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo" onclick="showPage('about')">
+                    <h1>AusScrap</h1>
+                    <p>Metal Recycling Solutions</p>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <button class="nav-link" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                    <button class="nav-link active" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                    <button class="nav-link" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                    <button class="nav-link" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                    <button class="nav-link" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                    <button class="nav-link active" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <button class="nav-link-mobile" data-page="home" onclick="window.location.href= '../index.html'">Home</button>
+                <button class="nav-link-mobile" data-page="about" onclick="window.location.href= '/pages/about.html'">About</button>
+                <button class="nav-link-mobile" data-page="services" onclick="window.location.href= '/pages/services.html'">Services</button>
+                <button class="nav-link-mobile" data-page="offers" onclick="window.location.href= '/pages/offers.html'">Offers</button>
+                <button class="nav-link-mobile" data-page="contact" onclick="window.location.href= '/pages/contact.html'">Contact</button>
+                <button class="nav-link-mobile" data-page="quote" onclick="window.location.href= '/pages/quote.html'">Get Quote</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- about Content -->
+    <div class="container page-content">
+    <!-- Modern Header -->
+    <div class="modern-page-header">
+        <span class="page-badge">
+            <i class="fas fa-recycle"></i>
+            Our Journey
+        </span>
+        <h1>About AusScrap</h1>
+        <p class="modern-subtitle">Pioneering sustainable metal recycling in Australia through innovation, integrity, and environmental stewardship since 1998.</p>
+    </div>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision-section">
+        <div class="mission-vision-grid">
+            <div class="mission-card">
+                <div class="card-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Our Mission</h3>
+                <p>To transform Australia's scrap metal industry through innovative recycling solutions that benefit our customers, community, and environment while setting new standards for sustainability and service excellence.</p>
+            </div>
+            
+            <div class="vision-card">
+                <div class="card-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Our Vision</h3>
+                <p>To be Australia's most trusted and environmentally responsible metal recycling partner, leading the transition to a circular economy where every piece of metal gets a second life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Message Section -->
+    <section class="ceo-message-section">
+        <div class="ceo-content">
+            <div class="ceo-image">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="John Smith - CEO AusScrap">
+                <div class="ceo-badge">
+                    <i class="fas fa-crown"></i>
+                    Founder & CEO
+                </div>
+            </div>
+            <div class="ceo-message">
+                <div class="message-header">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <h2>A Message From Our Founder</h2>
+                </div>
+                <blockquote class="ceo-quote">
+                    "What started as a single truck and a dream has grown into Australia's most trusted metal recycling company. For over 25 years, we've remained committed to our core values: environmental responsibility, customer satisfaction, and community partnership. Every piece of metal we recycle represents a step toward a cleaner, more sustainable future for our children."
+                </blockquote>
+                <div class="ceo-signature">
+                    <strong>John Smith</strong>
+                    <span>Founder & CEO, AusScrap</span>
+                    <div class="signature-stats">
+                        <div class="signature-stat">
+                            <i class="fas fa-award"></i>
+                            <span>25+ Years Industry Experience</span>
+                        </div>
+                        <div class="signature-stat">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Environmental Science Degree</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="modern-story-section">
+        <div class="story-content-modern">
+            <div class="story-text-modern">
+                <div class="section-header-modern">
+                    <span class="section-label">Our Heritage</span>
+                    <h2>Building a Sustainable Legacy</h2>
+                    <p>From humble beginnings to industry leadership - our journey of growth and innovation</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1998</div>
+                        <div class="timeline-content">
+                            <h4><i class="fas fa-rocket"></i> The Beginning</h4>
+                            <p>Founded as a family business with one truck, serving local Canberra businesses with scrap metal collection services.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2005</div>
+                        <div class="timeline-content">
+                            <h4><i class="fas fa-expand"></i> Regional Expansion</h4>
+                            <p>Expanded operations across ACT and NSW, establishing partnerships with major construction and manufacturing companies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h4><i class="fas fa-industry"></i> Facility Upgrade</h4>
+                            <p>Opened state-of-the-art recycling facility with advanced sorting technology and environmental controls.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">
+                            <h4><i class="fas fa-leaf"></i> Carbon Neutral</h4>
+                            <p>Achieved carbon neutral certification and implemented comprehensive sustainability initiatives across all operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-visual">
+                <div class="visual-card">
+                    <img src="https://images.unsplash.com/photo-1719399924262-ebb6f2a8de80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWN5Y2xpbmclMjBidXNpbmVzcyUyMHRlYW18ZW58MXx8fHwxNzU5NDk0NTU0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="AusScrap Team">
+                    <div class="visual-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-users"></i>
+                            <h4>Our Dedicated Team</h4>
+                            <p>50+ professionals committed to excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics -->
+    <section class="modern-stats-section">
+        <div class="stats-container">
+            <div class="stats-header">
+                <span class="stats-badge">
+                    <i class="fas fa-chart-line"></i>
+                    By The Numbers
+                </span>
+                <h2>Our Environmental Impact</h2>
+                <p>Measurable results that demonstrate our commitment to sustainability and service excellence</p>
+            </div>
+            
+            <div class="modern-stats-grid">
+                <div class="modern-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-badge">Since 1998</div>
+                    </div>
+                    <div class="stat-number" data-target="25">10+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                    <div class="stat-description">Quarter-century of trusted service</div>
+                </div>
+                
+                <div class="modern-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <div class="stat-icon">
+                            <i class="fas fa-weight-hanging"></i>
+                        </div>
+                        <div class="stat-badge">Monthly</div>
+                    </div>
+                    <div class="stat-number" data-target="10000">10</div>
+                    <div class="stat-label">Tons Recycled</div>
+                    <div class="stat-description">Equivalent to 70 cars monthly</div>
+                </div>
+                
+                <div class="modern-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="stat-badge">Satisfied</div>
+                    </div>
+                    <div class="stat-number" data-target="500">20</div>
+                    <div class="stat-label">Business Partners</div>
+                    <div class="stat-description">Trusted by companies Australia-wide</div>
+                </div>
+                
+                <div class="modern-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-badge">Rating</div>
+                    </div>
+                    <div class="stat-number" data-target="98">500+</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                    <div class="stat-description">Based on client feedback</div>
+                </div>
+            </div>
+            
+            <div class="environmental-impact">
+                <div class="impact-header">
+                    <h3><i class="fas fa-leaf"></i> Environmental Achievements</h3>
+                    <p>Our contribution to a greener planet</p>
+                </div>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <i class="fas fa-tree"></i>
+                        <div>
+                            <h4>15,000+ Trees Saved</h4>
+                            <p>Equivalent carbon offset through recycling</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-landmark"></i>
+                        <div>
+                            <h4>2,100+ Landfill Saved</h4>
+                            <p>Tons diverted from landfill annually</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-tint"></i>
+                        <div>
+                            <h4>98% Recycling Rate</h4>
+                            <p>Industry-leading material recovery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="values-container">
+            <div class="values-header">
+                <h2>Our Core Values</h2>
+                <p>The principles that guide every decision we make and every service we provide</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Integrity</h4>
+                    <p>Honest pricing, transparent processes, and ethical business practices in everything we do.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Sustainability</h4>
+                    <p>Committed to environmental protection and promoting circular economy principles.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Community</h4>
+                    <p>Supporting local businesses and contributing to the communities we serve.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h4>Quality</h4>
+                    <p>Uncompromising standards in service delivery and environmental compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+     
+<!-- Simple Modern FAB -->
+<div class="floating-actions-simple">
+    <button class="fab-simple whatsapp" 
+            onclick="window.open('https://wa.me/61405024780', '_blank')"
+            title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+    <button class="fab-simple phone" 
+            onclick="window.open('tel:0405024780', '_self')"
+            title="Call Us">
+        <i class="fas fa-phone"></i>
+    </button>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AusScrap</h3>
+                    <p>Australia's leading metal recycling company, committed to sustainable practices and exceptional customer service.</p>
+                    <button onclick="window.open('tel:+61731234567', '_self')" class="footer-phone">
+                        +61 7 3123 4567
+                    </button>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/services.html'">Metal Collection</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Industrial Recycling</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Residential Service</button></li>
+                        <li><button onclick="window.location.href='/pages/services.html'">Commercial Solutions</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><button onclick="window.location.href='/pages/about.html'">About Us</button></li>
+                        <li><button onclick="window.location.href='/pages/offers.html'">Current Offers</button></li>
+                        <li><button onclick="window.location.href='/pages/contact.html'">Contact</button></li>
+                        <li><button onclick="window.location.href='/pages/quote.html'">Get Quote</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>123 Industrial Drive<br>Brisbane, QLD 4000</p>
+                        <p>info@ausscrap.com.au</p>
+                        <p>Mon-Fri: 7AM-6PM<br>Sat: 8AM-4PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AusScrap Metal Recycling. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -359,3 +359,210 @@ function initializeAdditionalFeatures() {
 
 // Initialize additional features when DOM is ready
 document.addEventListener('DOMContentLoaded', initializeAdditionalFeatures);
+
+// Web3Forms Quote Form Handler
+function setupWeb3FormsQuoteForm() {
+    const quoteForm = document.getElementById('web3QuoteForm');
+    
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = quoteForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            // Show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
+            try {
+                const formData = new FormData(quoteForm);
+                
+                // Validate required fields
+                const requiredFields = ['full_name', 'phone_number', 'email', 'location', 'scrap_type'];
+                let isValid = true;
+                
+                for (let field of requiredFields) {
+                    if (!formData.get(field)) {
+                        isValid = false;
+                        break;
+                    }
+                }
+                
+                if (!isValid) {
+                    showNotification('Please fill in all required fields.', 'error');
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                    return;
+                }
+                
+                // Check terms agreement
+                if (!formData.get('terms_agreement')) {
+                    showNotification('Please agree to the terms and conditions.', 'error');
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                    return;
+                }
+                
+                // Send to Web3Forms
+                const response = await fetch(quoteForm.action, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showNotification('Quote request sent successfully! We\'ll contact you within 15 minutes.', 'success');
+                    quoteForm.reset();
+                } else {
+                    showNotification('There was an error sending your request. Please try again or call us directly.', 'error');
+                }
+                
+            } catch (error) {
+                console.error('Form submission error:', error);
+                showNotification('There was an error sending your request. Please try again or call us directly.', 'error');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            }
+        });
+    }
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    setupWeb3FormsQuoteForm();
+    
+    // Add real-time validation
+    const formInputs = document.querySelectorAll('#web3QuoteForm input, #web3QuoteForm textarea, #web3QuoteForm select');
+    formInputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+    });
+});
+
+// Field validation function
+function validateField(field) {
+    const value = field.value.trim();
+    
+    if (field.hasAttribute('required') && !value) {
+        field.style.borderColor = '#ef4444';
+        return false;
+    }
+    
+    if (field.type === 'email' && value) {
+        const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+        field.style.borderColor = isValid ? '#22c55e' : '#ef4444';
+        return isValid;
+    }
+    
+    if (field.type === 'tel' && value) {
+        // Basic phone validation for Australian numbers
+        const phoneRegex = /^(\+?61|0)[2-9]\d{8}$/;
+        const isValid = phoneRegex.test(value.replace(/\s/g, ''));
+        field.style.borderColor = isValid ? '#22c55e' : '#ef4444';
+        return isValid;
+    }
+    
+    field.style.borderColor = '#22c55e';
+    return true;
+}
+
+// Compact Quote Form Handler
+function setupCompactQuoteForm() {
+    const quoteForm = document.getElementById('web3QuoteForm');
+    
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = quoteForm.querySelector('button[type="submit"]');
+            const btnText = submitButton.querySelector('.btn-text');
+            const btnLoader = submitButton.querySelector('.btn-loader');
+            const originalText = btnText.textContent;
+            
+            // Show loading state
+            submitButton.disabled = true;
+            btnText.textContent = 'Sending...';
+            btnLoader.style.display = 'inline';
+            
+            try {
+                const formData = new FormData(quoteForm);
+                
+                // Validate scrap type selection
+                const scrapType = formData.get('scrap_type');
+                if (!scrapType) {
+                    showNotification('Please select your scrap type.', 'error');
+                    return;
+                }
+                
+                // Send to Web3Forms
+                const response = await fetch(quoteForm.action, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showNotification('✅ Quote request sent! We\'ll contact you within 15 minutes.', 'success');
+                    quoteForm.reset();
+                } else {
+                    showNotification('❌ Error sending request. Please call us directly.', 'error');
+                }
+                
+            } catch (error) {
+                console.error('Form submission error:', error);
+                showNotification('❌ Network error. Please try again or call us.', 'error');
+            } finally {
+                submitButton.disabled = false;
+                btnText.textContent = originalText;
+                btnLoader.style.display = 'none';
+            }
+        });
+        
+        // Add real-time interactions
+        const scrapCards = quoteForm.querySelectorAll('.scrap-card');
+        scrapCards.forEach(card => {
+            card.addEventListener('click', function() {
+                scrapCards.forEach(c => c.parentElement.querySelector('.scrap-radio').checked = false);
+                this.parentElement.querySelector('.scrap-radio').checked = true;
+                scrapCards.forEach(c => c.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
+    }
+}
+
+// Initialize compact form
+document.addEventListener('DOMContentLoaded', function() {
+    setupCompactQuoteForm();
+});
+
+
+///////////////////////////////////////////////
+// Enhanced FAB functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const fabMain = document.getElementById('fabMain');
+    const fabSubActions = document.querySelector('.fab-sub-actions');
+    
+    // Toggle sub actions on click (for mobile)
+    fabMain.addEventListener('click', function() {
+        fabSubActions.classList.toggle('active');
+    });
+    
+    // Close sub actions when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.floating-actions')) {
+            fabSubActions.classList.remove('active');
+        }
+    });
+    
+    // Add pulse animation every 10 seconds
+    setInterval(() => {
+        fabMain.classList.add('pulse');
+        setTimeout(() => fabMain.classList.remove('pulse'), 2000);
+    }, 10000);
+});
